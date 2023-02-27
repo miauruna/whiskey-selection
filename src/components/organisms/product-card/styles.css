@@ -1,0 +1,141 @@
+.product-card-wrapper-home {
+	border-radius: var(--border-radius);
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+}
+.product-card-wrapper-home:hover {
+	transform: scale(1.02);
+	box-shadow: 0px 0px 10px #000000;
+}
+.product-card-wrapper-detail {
+	width: 40%;
+}
+
+.product-card {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	background: var(--default-bg-gradient-angled);
+	background-color: #000000;
+	height: 544px;
+	width: 100%;
+	border-radius: var(--border-radius);
+}
+.product-content {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.content-left {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	flex-direction: column;
+	padding: var(--spacing-regular);
+	width: 50%;
+}
+
+.product-title,
+.product-cost {
+	margin-bottom: var(--spacing-small);
+	font-size: var(--font-size-lg);
+	color: white;
+	text-transform: capitalize;
+}
+
+.product-region {
+	color: #696969;
+	text-transform: capitalize;
+	font-size: var(--font-size-md);
+}
+.product-region,
+.product-cost {
+	margin-bottom: var(--spacing-regular);
+}
+.product-tasting-notes {
+	position: relative;
+	right: 58px;
+}
+.content-right {
+	position: relative;
+	display: flex;
+	flex: 1;
+}
+.product-accent {
+	height: 4px;
+	width: 70px;
+	position: absolute;
+	top: var(--spacing-regular);
+	right: calc(var(--spacing-small) * -1);
+}
+.product-image-home {
+	width: 160px;
+	min-width: 160px;
+	position: absolute;
+	top: var(--spacing-regular);
+	left: var(--spacing-large);
+	object-fit: cover;
+}
+.product-image-detail {
+	min-width: 160px;
+	max-width: 205px;
+	position: absolute;
+	object-fit: cover;
+	left: calc(var(--spacing-regular) * -1);
+	bottom: calc(var(--spacing-regular) * -1);
+	transition: all 0.3s ease-in-out;
+}
+.product-image-detail:hover {
+	transform: rotate(5deg);
+}
+.product-card-bg-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.product-card-bg-detail {
+	width: 90%;
+	object-fit: cover;
+	bottom: 0;
+	left: var(--spacing-large);
+	position: relative;
+}
+.product-card-bg-home {
+	width: 150%;
+	height: 110%;
+	object-fit: cover;
+	bottom: 10%;
+	right: 50%;
+	position: relative;
+}
+
+@media screen and (max-width: 1440px) {
+	.product-card-wrapper-detail {
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.product-card-wrapper-detail {
+		width: 100%;
+	}
+	.product-image-home {
+		left: 0;
+		top: 0;
+	}
+}
+@media screen and (max-width: 680px) {
+	.product-tasting-notes {
+		right: var(--spacing-small);
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.product-title,
+	.product-cost {
+		font-size: var(--font-size-md);
+		letter-spacing: normal;
+	}
+}

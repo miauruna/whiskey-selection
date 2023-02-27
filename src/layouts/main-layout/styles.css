@@ -1,0 +1,12 @@
+.body {
+	width: 100%;
+	min-height: 100vh;
+	position: relative;
+}
+
+.shopping-cart-container {
+	position: fixed;
+	right: var(--spacing-regular);
+	top: var(--spacing-regular);
+	z-index: 2;
+}

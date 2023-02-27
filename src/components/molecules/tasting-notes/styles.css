@@ -1,0 +1,27 @@
+.tasting-notes {
+	display: flex;
+	height: 60px;
+	align-items: center;
+	gap: var(--spacing-regular);
+	padding: 0 var(--spacing-regular);
+	width: fit-content;
+	transform: skew(-10deg);
+	border-radius: var(--border-radius);
+}
+.tasting-notes-label {
+	transform: skew(10deg);
+	text-transform: capitalize;
+	font-size: var(--font-size-sm);
+	cursor: default;
+	color: white;
+}
+.tasting-notes:hover {
+	animation: glow 3s infinite;
+}
+
+@media only screen and (max-width: 768px) {
+	.tasting-notes {
+		gap: var(--spacing-small);
+		padding: 0 var(--spacing-small);
+	}
+}

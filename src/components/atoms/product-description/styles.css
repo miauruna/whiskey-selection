@@ -1,0 +1,16 @@
+.product-description {
+	font-size: var(--font-size-md);
+	margin: auto;
+	width: 100%;
+	text-align: center;
+	white-space: pre-wrap;
+}
+.capitalize {
+	text-transform: capitalize;
+}
+
+@media only screen and (max-width: 1024px) {
+	.product-description {
+		width: 90%;
+	}
+}

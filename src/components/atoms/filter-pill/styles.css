@@ -1,0 +1,25 @@
+.filter-pill-init {
+	min-width: 40px;
+	border: 1px solid #e3e3e3;
+	padding: var(--spacing-small);
+	border-radius: 50px;
+	text-transform: capitalize;
+	color: #0000006c;
+	font-weight: 700;
+	font-size: var(--font-size-md);
+	cursor: pointer;
+	text-align: center;
+}
+
+.filter-pill-active {
+	background-color: #e3e3e35b;
+	color: #000000;
+}
+
+@media only screen and (max-width: 768px) {
+	.filter-pill-init {
+		gap: var(--spacing-small);
+		padding: var(--spacing-small);
+		font-size: var(--font-size-sm);
+	}
+}
