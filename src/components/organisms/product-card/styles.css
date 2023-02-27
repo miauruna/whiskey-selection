@@ -74,15 +74,12 @@
 	min-width: 160px;
 	position: absolute;
 	top: var(--spacing-regular);
-	left: var(--spacing-large);
-	object-fit: cover;
+	left: var(--spacing-regular);
 }
 .product-image-detail {
 	min-width: 160px;
 	max-width: 205px;
 	position: absolute;
-	object-fit: cover;
-	left: calc(var(--spacing-regular) * -1);
 	bottom: calc(var(--spacing-regular) * -1);
 	transition: all 0.3s ease-in-out;
 }
