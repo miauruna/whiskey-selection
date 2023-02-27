@@ -1,3 +1,5 @@
+## link to the hosted web app: https://whiskey-selection.web.app/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
